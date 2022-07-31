@@ -523,3 +523,12 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px ;
+}
+
+.redondo{
+    border-radius: 50%;
+}
