@@ -1,5 +1,4 @@
 import './Header.css'
-import Brand from '../Brand'
 
 const Header = () => {
     return(
@@ -7,12 +6,11 @@ const Header = () => {
                 <div class="Brand">
                     <p>R|A|F|A|E|L</p>
                 </div>
-                
                 <div class="menu"> 
-                <a>Perfil</a> 
-                <a>Habilidades</a> 
-                <a>Experiência</a> 
-                <a>Contato</a>
+                    <a>Perfil</a> 
+                    <a>Habilidades</a> 
+                    <a>Experiência</a> 
+                    <a>Contato</a>
                 </div>
         </div>
     )
