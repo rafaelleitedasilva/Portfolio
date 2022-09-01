@@ -1,0 +1,42 @@
+.Banner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-image: url("../../../public/Imagens/avatar4.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
+
+.Imagem{
+    width: 30vw;
+    border-radius: 50%;
+    margin: 25px;
+}
+
+.perfil{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.Paragrafos{
+    margin: auto;
+    font-size: 18px;
+}
+
+.Paragrafos p, h1{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 3px 10px rgb(0, 0, 0);
+}
+
+.banner {
+    transition: opacity 0.5s;
+    opacity: 1;
+  }
+
+.Banner.hide {
+    opacity: 0;
+    pointer-events:none;
+  }
