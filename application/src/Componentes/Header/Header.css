@@ -40,4 +40,21 @@
     padding: 8px;
 }
 
+.menu2{
+    display: none;
+}
 
+.menu2 img{
+    width: 30px;
+    margin: 10px;
+    margin-top:19px;
+}
+
+@media (max-width:768px){ 
+    .menu{
+        display:none;
+    }
+    .menu2{
+        display: block;
+    }
+}

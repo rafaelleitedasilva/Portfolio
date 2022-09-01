@@ -12,6 +12,9 @@ const Header = () => {
                     <a>Experiência</a> 
                     <a>Contato</a>
                 </div>
+                <div class="menu2">
+                    <a><img src="./Imagens/burger-menu.png" class="icone-menu" alt="burger"/></a>
+                </div>
         </div>
     )
 }

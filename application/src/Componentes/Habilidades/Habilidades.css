@@ -1,0 +1,101 @@
+.Habilidades{
+    padding: 30px;
+}
+
+.loader {
+    width: 100%;
+    display: flex;
+}
+
+.loader>div{
+    margin: auto;
+}
+
+.loader>div>div{
+    margin-left: auto;
+}
+
+.loader .loading_1 {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    animation: turn 4s linear 1.75s infinite;
+}
+
+.loader .loading_1:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+}
+
+
+.loading_1.vermelho:before{
+    width: 70%;
+    background-color: rgb(255, 64, 64);
+    animation: loadHtml 3s linear normal;
+}
+
+.azul:before{
+    width: 55%;
+    background-color: rgb(64, 92, 255);
+    animation: loadPython 3s linear normal;
+}
+
+.amarelo:before{
+    width: 65%;
+    background-color: rgb(255, 226, 64);
+    animation: loadJavascript 4s linear normal;
+}
+
+.verde:before{
+    width: 35%;
+    background-color: rgb(80, 255, 64);
+    animation: loadReact 2s linear normal;
+}
+
+div.main{
+    width: 100%;
+    margin-right: auto;
+}
+
+.cem{
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+@keyframes loadHtml {
+    0% {
+        width: 0%;
+    }
+    87.5% {
+        width: 70%;
+    }
+}
+
+@keyframes loadJavascript {
+    0% {
+        width: 0%;
+    }
+    87.5% {
+        width: 65%;
+    }
+}
+
+@keyframes loadReact {
+    0% {
+        width: 0%;
+    }
+    87.5% {
+        width: 35%;
+    }
+}
+@keyframes loadPython {
+    0% {
+        width: 0%;
+    }
+    87.5% {
+        width: 55%;
+    }
+}

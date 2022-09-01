@@ -3,13 +3,15 @@
     justify-content: space-between;
     width: 100%;
     background-image: url("../../../public/Imagens/avatar4.png");
-    background-size: cover;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: top;
+    background-position: right;
+    border-radius: 0% 0% 2%;
 }
 
 .Imagem{
-    width: 30vw;
+    max-width: 30vw;
     border-radius: 50%;
     margin: 25px;
 }
@@ -21,14 +23,26 @@
 }
 
 .Paragrafos{
-    margin: auto;
+    margin: 30px;
     font-size: 18px;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 15.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    padding: 50px;
 }
 
-.Paragrafos p, h1{
-    text-align: center;
-    color: white;
-    text-shadow: 2px 3px 10px rgb(0, 0, 0);
+.Paragrafos p{
+    text-indent: 20px;
+    font-size: 17px;
+    margin: 1px;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+}
+
+.Paragrafos h1{
+    margin: 3px;
+    font-size: 20px;
 }
 
 .banner {
@@ -39,4 +53,27 @@
 .Banner.hide {
     opacity: 0;
     pointer-events:none;
-  }
+}
+
+@media (max-width: 900px) {
+    .Banner{
+        display: block;
+    }
+    .Imagem{
+        max-width: 400px;
+    }
+    .Banner{
+        background-repeat: no-repeat;
+        background-attachment: local;
+    }
+}
+@media (max-width: 1100px){
+    .Paragrafos{
+        margin: 20px;
+        background: rgba( 255, 255, 255, 0.35 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 15.5px );
+        -webkit-backdrop-filter: blur( 13.5px );
+        padding: 20px;
+    }
+}
