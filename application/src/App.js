@@ -9,6 +9,7 @@ function App() {
         <Header></Header>
         <Banner></Banner>
         <Habilidades></Habilidades>
+        
     </div>
   );
 }
