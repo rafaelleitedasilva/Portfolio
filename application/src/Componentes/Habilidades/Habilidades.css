@@ -1,5 +1,7 @@
 .Habilidades{
     padding: 10px;
+    background-image: url('../../../public/Imagens/fundo_branco.jpg');
+    background-size: cover;
 }
 
 .loader {
@@ -76,6 +78,11 @@ div>label{
     width: 35%;
     background-color: rgba(39, 228, 39, 0.788);
     animation: loadReact 2s linear normal;
+}
+
+.textoTec:hover{
+    color: rgb(70, 70, 255);
+    cursor: default;
 }
 
 div.main{

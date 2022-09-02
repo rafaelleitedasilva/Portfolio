@@ -5,9 +5,11 @@ const projetos = ['Intranet','Alumbra','PurplePaper','']
 const Projetos = () => {
     return(
         <div class="Projetos">
-            {projetos.map(()=>{
-                <div></div>
-            })}
+            <div class="Projetos-main">
+                <div class="Carrossel">
+                    
+                </div>
+            </div>
         </div>
     )
 }

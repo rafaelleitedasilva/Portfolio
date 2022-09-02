@@ -8,8 +8,7 @@ const Habilidades = () => {
                 
                 <div class="main">
                 <div class="tecnologias">
-                    <p>GitHub</p><p>Next.js</p><p>Google Cloud</p><p>SQL Server</p><p>AWS</p>
-                    <p>Selenium</p><p>Tkinter</p>
+                    <p class="textoTec">GitHub</p><p class="textoTec">Next.js</p><p class="textoTec">Google Cloud</p><p class="textoTec">SQL Server</p><p class="textoTec">AWS</p><p class="textoTec">Selenium</p><p class="textoTec">Tkinter</p>
                 </div>
                 <div class="graficos">
                         <div class="React">
