@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Rafael L. da Silva </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rafael Leite da Silva</h1>
+        <nav>
+            <a href="#sobre">
+                <h2 id="nav-sobre" class="nav-button active" onclick="active('nav-sobre')">Sobre</h2>
+            </a>
+            <a href="#formacao">
+                <h2 id="nav-formacao" class="nav-button inactive" onclick="active('nav-formacao')">Formação</h2>
+            </a>
+            <a href="#portfolio">
+                <h2 id="nav-portfolio" class="nav-button inactive" onclick="active('nav-portfolio')">Portfólio</h2>
+            </a>
+            <a href="#contato">
+                <h2 id="nav-contato" class="nav-button inactive" onclick="active('nav-contato')">Contato</h2>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre">
+
+        </section>
+        <section id="formacao">
+
+        </section>
+        <section id="portfolio">
+
+        </section>
+        <section id="contato" class="">
+            <form id="contact-form" action="{{ route('email') }}" method="POST">
+                <div>
+                    <div>
+                        <div>
+                            <input class="form-control" type="text" name="name" placeholder="Nome" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input class="form-control" type="email" name="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input class="form-control" type="text" name="context" placeholder="Assunto" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <textarea class="form-control" name="message" id="message" placeholder="Mensagem" required></textarea>
+                        </div>
+                        <div>
+                            <button class="button-contact" type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script>
+        function active(active_nav) {
+            let nav_buttons = document.getElementsByClassName('nav-button');
+
+            // Converte a coleção para Array
+            let nav_buttonsArray = Array.from(nav_buttons);
+
+            // Remove a classe 'active' de todos os botões de navegação
+            nav_buttonsArray.forEach(element => {
+                element.classList.remove('active');
+            });
+
+            // Adicionar a classe 'active' ao botão de navegação clicado
+            document.getElementById(active_nav).classList.add('active');
+        }
+
+    </script>
+</body>
+</html>
