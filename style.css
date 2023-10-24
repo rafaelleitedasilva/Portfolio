@@ -1,26 +1,31 @@
+/* Define a fonte padrão e a cor de fundo para todo o documento */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #6b6b6b61;
-    color: #1c1c1c;
+    font-family: Arial, sans-serif; /* Escolha da fonte para o texto */
+    background-color: #6b6b6b61; /* Cor de fundo cinza semi-transparente */
+    color: #1c1c1c; /* Cor do texto */
     margin: 0;
     padding: 0;
     text-align: justify;
 }
 
-main{
-    margin: 0 auto;
-    margin: 0px 200px;
-    background-color: #fff;
-    box-shadow: 1px 2px 10px gray;
+/* Estilize a área de conteúdo principal */
+main {
+    margin: 0 auto; /* Centralize o conteúdo horizontalmente */
+    margin: 0px 200px; /* Adicione margem extra nas laterais */
+    background-color: #fff; /* Fundo branco */
+    box-shadow: 1px 2px 10px gray; /* Adicione uma sombra sutil para dar profundidade */
 }
+
+/* Estilize o cabeçalho com um layout flexível */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #5e5e5e;
+    background-color: #5e5e5e; /* Fundo cinza para o cabeçalho */
     padding: 10px;
 }
 
+/* Estilize o menu de navegação */
 nav ul {
     list-style: none;
     padding: 0;
@@ -36,26 +41,30 @@ nav a {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30px;
     text-decoration: none;
-    color: #1c1c1c;
+    color: #1c1c1c; /* Cor escura para os links */
 }
 
+/* Estilize as seções dentro do conteúdo principal */
 section {
     margin: 0px 20px;
     padding: 20px;
 }
 
+/* Estilize os parágrafos dentro das seções */
 p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 24px;
 }
 
+/* Estilize os cabeçalhos de nível 2 */
 h2 {
     font-size: 32px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Estilize formulários */
 form {
-    max-width: 100%;
+    max-width: 100%; /* Garanta que o formulário não ultrapasse seu contêiner */
 }
 
 label, input, textarea {
@@ -66,14 +75,15 @@ label, input, textarea {
 }
 
 input, textarea {
-    width: 100%;
+    width: 100%; /* Largura total para input e textarea */
     padding: 10px;
     box-sizing: border-box;
-    resize: none;
+    resize: none; /* Desabilite a redimensionamento da textarea */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 24px;
 }
 
+/* Estilize botões */
 button {
     background-color: #e7e7e7;
     color: #1c1c1c;
@@ -83,14 +93,15 @@ button {
     cursor: pointer;
 }
 
-.flex{
+/* Estilize elementos flexíveis e imagens */
+.flex {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.imagem{
+.imagem {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,22 +109,25 @@ button {
     width: 400px;
     height: 400px;
     margin: 20px;
-    box-shadow: 1px 2px 20px grey;
+    box-shadow: 1px 2px 20px grey; /* Adicione uma sombra às imagens */
 }
 
-.logo{
+/* Estilize o logo com um efeito de hover */
+.logo {
     width: 150px;
 }
 
-.logo:hover{
-    width: 200px;
+.logo:hover {
+    width: 200px; /* Amplie o logo ao passar o mouse */
 }
 
+/* Estilize o botão ao passar o mouse */
 button:hover {
     background-color: #606060;
     color: whitesmoke;
 }
 
-.active{
-    color: rgb(229, 229, 229);
+/* Estilize o link ativo na navegação */
+.active {
+    color: rgb(229, 229, 229); /* Mude a cor para o link ativo */
 }
