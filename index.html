@@ -1,70 +1,113 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Rafael L. da Silva </title>
     <link rel="stylesheet" href="style.css">
+    <title>Rafael Leite</title>
 </head>
 <body>
     <header>
         <h1>Rafael Leite da Silva</h1>
         <nav>
-            <a href="#sobre">
-                <h2 id="nav-sobre" class="nav-button active" onclick="active('nav-sobre')">Sobre</h2>
-            </a>
-            <a href="#formacao">
-                <h2 id="nav-formacao" class="nav-button inactive" onclick="active('nav-formacao')">Formação</h2>
-            </a>
-            <a href="#portfolio">
-                <h2 id="nav-portfolio" class="nav-button inactive" onclick="active('nav-portfolio')">Portfólio</h2>
-            </a>
-            <a href="#contato">
-                <h2 id="nav-contato" class="nav-button inactive" onclick="active('nav-contato')">Contato</h2>
-            </a>
+            <ul>
+                <li><a href="#sobre" class="nav-button active" onclick="active('1')" id="1">Sobre Mim</a></li>
+                <li><a href="#formacao" class="nav-button" onclick="active('2')" id="2"> Formação Educacional</a></li>
+                <li><a href="#portfolio" class="nav-button" onclick="active('3')" id="3">Portfólio</a></li>
+                <li><a href="#contato" class="nav-button" onclick="active('4')" id="4">Contato</a></li>
+            </ul>
         </nav>
     </header>
     <main>
+        <div class="flex" >
+            <img src="https://cdnb.artstation.com/p/assets/images/images/044/950/607/original/cas-floating-eye-orb.gif?1641561488" style="width:250px;" alt="">
+        </div>
         <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>
+                Desde os meus 15 anos, nutro uma profunda paixão pelo universo da programação. Durante esse período, tive a oportunidade de participar de diversos projetos, nos quais tive o privilégio de conhecer e aprender com excelentes programadores. Essas experiências enriquecedoras me deram um leque de possibilidades que me fizeram provar de muitas linguagens e arquiteturas diferentes.
+            </p>
+            <p>
+                Com 18 anos entrei no Senai para cursar Análise e Desenvolvimento de Sistemas, e durante 1 ano e 6 meses conheci pessoas maravilhosas que me ensinaram muito, ainda nesse curso pude aprender conceitos teóricos e práticos de serviçcos de nuvem, hospedagem e soft skills com inúmeros trabalhos em equipe.
+                Atualmente trabalho em diversos projetos assíncronos, dentre eles um blog para publicação de textos autorais e um sistema de print on demand, idealizado por Edilson Santos e seu irmão Edson Santos. Além dos serviços já concomitantes que possuo na consultoria.
+            </p>
 
+            <p>O meu site oficial... <a target="_blank" href="https://rafaelleitedasilva.dev.br" style="color: grey;text-decoration: none;"> rafaelleitedasilva </a></p>
         </section>
         <section id="formacao">
-
+            <h2>Formação Educacional</h2>
+            <div>
+                <h3>SENAI</h3>
+                <p>
+                    Técnico em Desenvolvimento de Sistemas
+                    19 Jan 2022 | 16 Jun 2023
+                </p>
+    
+                <small>Diadema, São Paulo</small>
+                <h3>UNINTER</h3>
+                <p>
+                    Técnologo em Análise e Desenvolvimento de Sistemas
+                    16 Jun 2023 | cursando
+                </p>
+    
+                <small>Diadema, São Paulo</small>
+            </div>
         </section>
         <section id="portfolio">
-
-        </section>
-        <section id="contato" class="">
-            <form id="contact-form" action="{{ route('email') }}" method="POST">
-                <div>
-                    <div>
-                        <div>
-                            <input class="form-control" type="text" name="name" placeholder="Nome" required>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <input class="form-control" type="email" name="email" placeholder="Email" required>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <input class="form-control" type="text" name="context" placeholder="Assunto" required>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <textarea class="form-control" name="message" id="message" placeholder="Mensagem" required></textarea>
-                        </div>
-                        <div>
-                            <button class="button-contact" type="submit">Enviar</button>
-                        </div>
-                    </div>
+            <h2>Portfólio</h2>
+            <div class="flex">
+                <div class="imagem" style="background-image: url(imagem/alumbra.jpeg);">
+                    <a href="https://www.alumbra.com.br/web/produtos" target="_blank">
+                        <img src="imagem/alumbra-logo.png" alt="Logo Alumbra" class="logo">
+                    </a>
                 </div>
-            </form>
+
+                <div class="imagem" style="background-image: url(imagem/blogtext.jpeg);">
+                    <a href="https://blogtext.vercel.app/" target="_blank">
+                        <img src="imagem/blogtext-logo.png" alt="Logo BlogText" class="logo">
+                    </a>
+                </div>
+
+                <div class="imagem" style="background-image: url(imagem/sestagio.jpeg);">
+                    <a href="https://sestagio.vercel.app/" target="_blank">
+                        <img src="imagem/senai-logo.png" alt="Logo Senai" class="logo">
+                    </a>
+                </div>
+
+                <div class="imagem" style="background-image: url(imagem/senai-intranet.png);">
+                    <a href="https://rafaelleitedasilva.github.io/senai-intranet/" target="_blank">
+                        <img src="imagem/senai-logo.png" alt="Senai" class="logo">
+                    </a>
+                </div>
+
+                <div class="imagem" style="background-image: url(imagem/fluit.jpeg);">
+                    <a href="http://fluit.us-east-1.elasticbeanstalk.com/" target="_blank">
+                        <img src="imagem/choppup-logo.png" alt="Fluit" class="logo">
+                    </a>
+                </div>
+
+                <div class="imagem" style="background-image: url(imagem/mercadoprint.jpeg);">
+                    <a href="https://mercadoprint.com.br/" target="_blank">
+                        <img src="imagem/mercadoprint-logo.svg" alt="Fluit" class="logo">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <div class="flex" style="justify-content: space-between;">
+                <h2>Contato</h2>
+                <small id="mensagem"></small>
+            </div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Seu email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
+            <button type="submit" onclick="mensagem()">Enviar</button>
         </section>
     </main>
+
     <script>
         function active(active_nav) {
             let nav_buttons = document.getElementsByClassName('nav-button');
@@ -81,6 +124,9 @@
             document.getElementById(active_nav).classList.add('active');
         }
 
+        function mensagem(){
+            document.getElementById('mensagem').textContent = 'Mensagem Enviada com Sucesso!'
+        }
     </script>
 </body>
 </html>
